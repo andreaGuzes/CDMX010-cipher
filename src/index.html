@@ -6,9 +6,41 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
+    <div id="header">
+    <div id="logo"> <img src="img/logo-e.png" alt=""></div>
+    <div id="encabezado"> 
+      <h1 class="title">Cosmos </h1>
+
     </div>
+  </div>
+  <h2 class="ins">Haz clic en la sección que corresponde a tu puesto</h2><br>
+  <div id = "contenedor">
+  <div id= "caja1">
+      <h2>Formulador</h2><br>
+      <img src="img/formulador.jpg" alt=""><br>
+      <br><button type="button" value="Ingresar" id="ingF"  class="bnt-in">Haz clic para ingresar</button>
+      <div id= "ingresoF">
+        <br><textarea name="" id="mensaje" cols="30" rows="10"  placeholder="Escribe ahora tu fórmula secreta para cifrar" ></textarea>
+  <br>
+    <input type="text" id="desplazamientos">    
+  <button id= "cipherBtn" value="Cifrar"> Haz clic ahora para cifrar</button>
+  <br>
+  <br><textarea name="" id="mensajeCifrado" cols="30" rows="10"></textarea>
+</div>
+</div>
+<div id="caja2">
+    <h2>Preparador</h2><br>
+    <img src="img/preparador.jpg" alt=""><br>
+   <br><button type="button" value="Ingresar" id="ingP" class="bnt-in">Haz clic para ingresar</button>
+    <div id="ingresoP">
+  <br>
+      <textarea name="" id="mnsCifrado" cols="30" rows="10" ></textarea>
+      <br><input type="text" id="desplazamientos1">    
+  <input type="button" id= "descifrarBtn" value="Descifrar">
+  <br><textarea name="" id="mnsdesCifrado" cols="30" rows="10"></textarea>
+  </div>
+</div>
+</div>
     <script src="index.js" type="module"></script>
   </body>
 </html>
