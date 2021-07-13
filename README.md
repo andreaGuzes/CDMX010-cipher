@@ -67,5 +67,5 @@ En el perfil del Químico Preparador es donde se ingresará el mensaje cifrado q
 Cosmos se desarrollo principalmente con: HTML, CSS y JavaScript.
 
 <p align="center">
-<img height="200" widht="400" src="img/stack.jpg">
+<img height="100" widht="400" src="https://github.com/andreaGuzes/CDMX010-cipher/blob/master/src/img/stack.png">
 </p>
