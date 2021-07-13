@@ -1,46 +1,104 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <meta charset="utf-8" />
+    <title>Cosmos</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="header">
-    <div id="logo"> <img src="img/logo-e.png" alt=""></div>
-    <div id="encabezado"> 
-      <h1 class="title">Cosmos </h1>
-
-    </div>
-  </div>
-  <h2 class="ins">Haz clic en la sección que corresponde a tu puesto</h2><br>
-  <div id = "contenedor">
-  <div id= "caja1">
-      <h2>Formulador</h2><br>
-      <img src="img/formulador.jpg" alt=""><br>
-      <br><button type="button" value="Ingresar" id="ingF"  class="bnt-in">Haz clic para ingresar</button>
-      <div id= "ingresoF">
-        <br><textarea name="" id="mensaje" cols="30" rows="10"  placeholder="Escribe ahora tu fórmula secreta para cifrar" ></textarea>
-  <br>
-    <input type="text" id="desplazamientos">    
-  <button id= "cipherBtn" value="Cifrar"> Haz clic ahora para cifrar</button>
-  <br>
-  <br><textarea name="" id="mensajeCifrado" cols="30" rows="10"></textarea>
-</div>
-</div>
-<div id="caja2">
-    <h2>Preparador</h2><br>
-    <img src="img/preparador.jpg" alt=""><br>
-   <br><button type="button" value="Ingresar" id="ingP" class="bnt-in">Haz clic para ingresar</button>
-    <div id="ingresoP">
-  <br>
-      <textarea name="" id="mnsCifrado" cols="30" rows="10" ></textarea>
-      <br><input type="text" id="desplazamientos1">    
-  <input type="button" id= "descifrarBtn" value="Descifrar">
-  <br><textarea name="" id="mnsdesCifrado" cols="30" rows="10"></textarea>
-  </div>
-</div>
-</div>
+    <header class="header">
+      <img class="logo" src="img/logo.png" alt="logo" />
+      <div class="encabezado">
+        <h1 class="title">Cosmos</h1>
+      </div>
+    </header>
+    <main>
+      <div class="instruction">
+        <h2 class="ins">
+          ¡Bienvenid@! Haz clic en la imagen que corresponde a tu perfil
+        </h2>
+      </div>
+      <div class="container" id="contenedor">
+        <div id="caja1">
+          <div class="profile">
+            <h2>Formulador</h2>
+            <button type="button" value="Ingresar" id="ingF" class="bnt-in">
+              <img src="img/microscope.png" alt="" />
+            </button>
+          </div>
+          <div id="ingresoF">
+            <div class="entry">
+              <textarea
+                id="mensaje"
+                cols="30"
+                rows="10"
+                placeholder="Escribe tu formulación a cifrar"
+              ></textarea>
+              <label for=""> Indica el número de cifrado: </label>
+              <input type="number" id="desplazamientos" min="1" max="25" />
+              <button
+                type="reset"
+                class="btn-cipher"
+                id="cipherBtn"
+                value="Cifrar"
+              >
+                Cifrar
+              </button>
+              <textarea
+                name=""
+                id="mensajeCifrado"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <button class="btn-back">
+                <img
+                  class="back"
+                  id="backFormulator"
+                  src="img/back.png"
+                  alt="back"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="caja2">
+          <div class="profile">
+            <h2>Preparador</h2>
+            <button type="button" value="Ingresar" id="ingP" class="bnt-in">
+              <img src="img/chemistry.png" alt="preparador" />
+            </button>
+          </div>
+          <div id="ingresoP">
+            <div class="entry">
+              <textarea
+                name=""
+                id="mnsCifrado"
+                cols="30"
+                rows="10"
+                placeholder="Escribe tu formulación cifrada"
+              ></textarea>
+              <label for=""> Indica el número para descifrar: </label>
+              <input type="number" id="desplazamientos1" min="1" max="25" />
+              <button class="btn-cipher" type="button" id="descifrarBtn">
+                Descifrar
+              </button>
+              <textarea id="mnsdesCifrado" cols="30" rows="10"></textarea>
+              <button class="btn-back">
+                <img
+                  class="back"
+                  id="backPreparer"
+                  src="img/back.png"
+                  alt="back"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2021 Andrea Guzmán</p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

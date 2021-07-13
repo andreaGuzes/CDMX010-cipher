@@ -1,54 +1,119 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap");
 
 body {
-    background-color: #9BF6FF;
+  background-color: #caf0f8;
+  padding: 0;
+  margin: 0;
 }
 
-.title{
-    font-family: 'Raleway', sans-serif;
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.title {
+  font-family: "Raleway", sans-serif;
+  margin-left: 50%;
 }
 
-#header{
-    background-color: #A0C4FF;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-img{
-height:200px;
-width: 200px;
-margin-left: 50px;
-}
-#encabezado{
-    margin-right: 600px;
-    font-family: 'Open Sans', sans-serif;
+.header {
+  background-color: #03045e;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
+  color: white;
 }
 
-#contenedor{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-#caja1{
-    margin-left: 300px;
-}
-#caja2{
-    margin-right: 300px;
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.bnt-in{
-    background-image: linear-gradient(#09BC8A, #004346);
-    width: 7rem;
-    height: 4rem;
-    color: rgb(255, 208, 208);
-    margin-left: 100px;
+img {
+  height: 200px;
+  width: 200px;
 }
-h2{
-    margin-left: 90px;
+
+.encabezado {
+  padding-left: 33%;
 }
-.ins{
-    margin-left: 400px;
+
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: -1px -1px 1px #aaa, 0px 4px 1px rgba(0, 0, 0, 0.5),
+    4px 4px 5px rgba(0, 0, 0, 0.7), 0px 0px 7px rgba(0, 0, 0, 0.4);
+}
+
+.instruction {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 90px;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.bnt-in {
+  width: 250px;
+  height: 250px;
+  border: none;
+  background-color: #0077b6;
+  border-radius: 8px;
+}
+
+h2 {
+  align-items: center;
+  margin-top: 50px;
+}
+
+label {
+  margin: 8px;
+}
+
+.btn-cipher {
+  width: 130px;
+  height: 30px;
+  background: linear-gradient(#095dbc, #002146);
+  color: aliceblue;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.btn-back {
+  margin: 15px;
+  background-color: #caf0f8;
+  border: none;
+  align-self: flex-end;
+}
+
+.btn-back .back {
+  width: 35px;
+  height: 35px;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  clear: both;
+  background: #03045e;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
